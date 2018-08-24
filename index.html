@@ -30,9 +30,9 @@
 			</div>
 		</div>
 		<div class="hashcode">
-			<p>404
+			<p style="text-align: center">404
 				<br>
-				<small>We can’t find the page you’re looking for</small>
+				<small class="al">We can’t find the page you’re looking for</small>
 			</p>
 			<span class="bubbles big"></span>
 			<span class="bubbles med"></span>
@@ -86,6 +86,7 @@
 		font-weight: 300;
 		margin: 0;
 		padding: 0;
+		overflow-x: hidden;
 	}
 
 	.main {
@@ -198,6 +199,9 @@
 	}
 
 	@media screen and (max-width: 479px) {
+		.al{
+			display: none;
+		}
 		.hashcode:after {
 			content: '';
 			display: inline-block;
@@ -210,6 +214,15 @@
 			transform: skewY(-4deg);
 			-webkit-transform: skewY(-6deg);
 		}
+		.hashcode p {
+    font-size: 240px!important;
+    color: #fff;
+     padding-top: 0px;
+    position: relative;
+    z-index: 9;
+    line-height: 150%!important;
+	margin-left: -35px;
+}
 	}
 
 
@@ -397,7 +410,7 @@
 	@-webkit-keyframes bigmove {
 		0% {
 			top: 0px;
-			left: 20%;
+			left: 0%;
 			opacity: 1;
 		}
 		25% {
@@ -417,7 +430,7 @@
 		}
 		100% {
 			top: 0px;
-			left: 20%;
+			left: 0%;
 			opacity: 1;
 		}
 	}
@@ -425,7 +438,7 @@
 	@keyframes bigmove {
 		0% {
 			top: 0px;
-			left: 20%;
+			left: 0%;
 			opacity: 1;
 		}
 		25% {
@@ -445,7 +458,7 @@
 		}
 		100% {
 			top: 0px;
-			left: 20%;
+			left: 0%;
 			opacity: 1;
 		}
 	}
